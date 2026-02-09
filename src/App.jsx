@@ -42,7 +42,7 @@ function App() {
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-          <div className="header-cta"><a href="#" className="btn-primary">Join Now</a></div>
+          <div className="header-cta"><button onClick={() => setShowPopup(true)} className="btn-primary" aria-label="Join Fitness Care Membership">Join Now</button></div>
         </div>
       </header>
 
@@ -55,8 +55,8 @@ function App() {
               <p>Join the elite fitness community and transform your physique with professional coaching and
                 state-of-the-art facilities.</p>
               <div className="hero-btns">
-                <a href="#" className="btn-primary">Start Your Journey</a>
-                <a href="#" className="btn-outline">View Classes</a>
+                <button onClick={() => setShowPopup(true)} className="btn-primary" aria-label="Start Your Fitness Journey">Start Your Journey</button>
+                <a href="#classes" className="btn-outline" aria-label="View Available Fitness Classes">View Classes</a>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ function App() {
               <div className="workout-info">
                 <h3>Hypertrophy Max</h3>
                 <p>Designed for pure muscle growth using science-backed volume and intensity techniques.</p>
-                <a href="#" className="link-btn">View Program →</a>
+                <button onClick={() => setShowPopup(true)} className="link-btn" aria-label="View Hypertrophy Max Program Details">View Program →</button>
               </div>
             </div>
             <div className="workout-card glass">
@@ -140,7 +140,7 @@ function App() {
               <div className="workout-info">
                 <h3>Core Igniter</h3>
                 <p>Build a rock-solid core and improve functional stability with high-intensity movements.</p>
-                <a href="#" className="link-btn">View Program →</a>
+                <button onClick={() => setShowPopup(true)} className="link-btn" aria-label="View Core Igniter Program Details">View Program →</button>
               </div>
             </div>
             <div className="workout-card glass">
@@ -166,7 +166,7 @@ function App() {
               <div className="workout-info">
                 <h3>Endurance Pro</h3>
                 <p>Maximize your aerobic capacity and cardiovascular health through elite stamina training.</p>
-                <a href="#" className="link-btn">View Program →</a>
+                <button onClick={() => setShowPopup(true)} className="link-btn" aria-label="View Endurance Pro Program Details">View Program →</button>
               </div>
             </div>
           </div>
@@ -260,7 +260,7 @@ function App() {
                 <li><strong>1.2k+</strong> Happy Clients</li>
                 <li><strong>Cert.</strong> NSCA-CPT</li>
               </ul>
-              <button onClick={() => setShowPopup(true)} className="btn-primary">Book A Free Session</button>
+              <button onClick={() => setShowPopup(true)} className="btn-primary" aria-label="Book A Free Coaching Session">Book A Free Session</button>
             </div>
           </div>
         </section>
@@ -283,7 +283,11 @@ function App() {
           </div>
           <div className="footer-social">
             <h4 style={{ color: "var(--primary-color)", marginBottom: "1.5rem" }}>Follow Us</h4>
-            <div style={{ color: "var(--text-muted)" }}>IG / TW / FB</div>
+            <div style={{ color: "var(--text-muted)" }}>
+              <a href="#" aria-label="Follow us on Instagram">IG</a> /
+              <a href="#" aria-label="Follow us on Twitter">TW</a> /
+              <a href="#" aria-label="Follow us on Facebook">FB</a>
+            </div>
           </div>
         </div>
         <div className="footer-bottom">
